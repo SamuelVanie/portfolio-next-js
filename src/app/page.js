@@ -141,10 +141,11 @@ export default function Home() {
               </h3>
               <p className="py-2 text-gray-800 dark:text-white">
                 Fully reliable and optimized code thanks to my optimization
-                classes and the clean code lessons took on internet{" "}
+                classes and the clean code lessons took on internet . Mainly
+                used languages:
               </p>
               <h4 className="py-4 text-teal-600">
-                Check my CV for the programming languages I know
+                RUST, C++, C, JAVA, PYTHON, JAVASCRIPT, EMACS LISP
               </h4>
             </div>
 
@@ -161,7 +162,8 @@ export default function Home() {
               <p className="py-2 text-gray-800 dark:text-white">
                 Knowledges in IP networking, have BASH knowledge, and a great
                 experience in LINUX (Debian & Arch). By the way,{" "}
-                <span className="text-teal-600">I am an arch Linux user</span>
+                <span className="text-teal-600">I am an arch Linux user. </span>
+                Please feel free to check out my resume for more details.
               </p>
             </div>
           </div>
@@ -169,7 +171,7 @@ export default function Home() {
         <section>
           <div className="text-center">
             <h3 className="text-3xl py-1 text-gray-800 dark:text-white">
-              Show down of inspiration
+              Inspiring Projects
             </h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
               I offer from a wide range of services, from web development to
