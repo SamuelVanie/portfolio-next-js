@@ -106,7 +106,7 @@ export default function Home() {
               system administration, through mobile development.
             </p>
 
-            <p>
+            <p className="text-gray-800 dark:text-white">
               This project uses{" "}
               <span className="text-teal-500">REACT JS and NEXT JS</span>
             </p>
