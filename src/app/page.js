@@ -15,12 +15,18 @@ import design from "../../public/design.png";
 import code from "../../public/code.png";
 import system from "../../public/consulting.png";
 
-import web1 from "../../public/web1.png";
-import web2 from "../../public/web2.png";
-import web3 from "../../public/web3.png";
-import web4 from "../../public/web4.png";
-import web5 from "../../public/web5.png";
-import web6 from "../../public/web6.png";
+import changandrobert from "../../public/chang-roberts-leader-election.jpg";
+import dataalgorithmcpp from "../../public/data_algorithm_cpp.jpg";
+import deliverooclone from "../../public/deliverooClone.png";
+import dojoblog from "../../public/dojo_blog.png";
+import figraytracing from "../../public/figRaytracing.png";
+import konesto from "../../public/koneSto.png";
+import laptopui from "../../public/laptop-ui.png";
+import plateformesi from "../../public/plateformeEsi.png";
+import portfolio from "../../public/portfolio.png";
+import pygamegame from "../../public/pyGameGame.png";
+import quotegenerator from "../../public/quote_generator.png";
+import snakejs from "../../public/snake_js.png";
 
 import { Fragment, useState } from "react";
 import Modal from "../components/Modal";
@@ -197,50 +203,30 @@ export default function Home() {
               </h3>
               <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
                 I offer from a wide range of services, from web development to
-                system administration, through mobile development.
+                system administration, through mobile development. This is a
+                non-exhaustive list of my projects.
+              </p>
+              <p className="text-md py-2 leading-8 text-teal-800 dark:text-white">
+                {" "}
+                Click on the project to see more details.
               </p>
             </div>
 
+            {/* PROJECTS LIST */}
             <div className="flex flex-col gap-10 py-10 justify-center w-full lg:flex-row lg:flex-wrap">
-              <div className="basis-1/4">
+              <div
+                className="basis-1/4 cursor-pointer"
+                onClick={() =>
+                  openModal([
+                    "Chang and Robert Implementation",
+                    "GO",
+                    "Chang and Robert algorithm in GOLANG, it is a distributed algorithm that allows to solve the mutual exclusion problem. This algorithm permit election of a leader.",
+                    "https://github.com/SamuelVanie/ChangAndRobertAlgorithm",
+                  ])
+                }
+              >
                 <Image
-                  src={web1}
-                  className="rounded-lg object-cover"
-                  width={"100%"}
-                  height={"100%"}
-                  layout="responsive"
-                />
-              </div>
-              <div className="basis-1/4">
-                <Image
-                  src={web2}
-                  className="rounded-lg object-cover"
-                  width={"100%"}
-                  height={"100%"}
-                  layout="responsive"
-                />
-              </div>
-              <div className="basis-1/4">
-                <Image
-                  src={web3}
-                  className="rounded-lg object-cover"
-                  width={"100%"}
-                  height={"100%"}
-                  layout="responsive"
-                />
-              </div>
-              <div className="basis-1/4">
-                <Image
-                  src={web4}
-                  className="rounded-lg object-cover"
-                  width={"100%"}
-                  height={"100%"}
-                  layout="responsive"
-                />
-              </div>
-              <div className="basis-1/4">
-                <Image
-                  src={web5}
+                  src={changandrobert}
                   className="rounded-lg object-cover"
                   width={"100%"}
                   height={"100%"}
@@ -251,14 +237,211 @@ export default function Home() {
                 className="basis-1/4 cursor-pointer"
                 onClick={() =>
                   openModal([
-                    "Project 1",
-                    "HTML, CSS",
-                    "This is the description of the project 1",
+                    "Data Structures and Algorithms in C++",
+                    "C++",
+                    "This repository contains the implementation of the most common data structures and algorithms in C++ but with the help of C++ smart pointers instead of raw pointers. This repository is a work in progress.",
+                    "https://github.com/SamuelVanie/DataAlgorithmsCpp",
                   ])
                 }
               >
                 <Image
-                  src={web6}
+                  src={dataalgorithmcpp}
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                />
+              </div>
+              <div
+                className="basis-1/4 cursor-pointer"
+                onClick={() =>
+                  openModal([
+                    "Deliveroo Clone",
+                    "REACT NATIVE, TAILWIND CSS, SANITY.IO, REDUX, STRIPE, REACT-NATIVE-MAPS, REACT NATIVE NAVIGATION",
+                    "This is a clone of the deliveroo app. It is a mobile application that allows you to order food from your phone. This application is made with React Native, Tailwind CSS, Sanity.io, Redux and Stripe. Check out the demo video on my github repository.",
+                    "https://github.com/SamuelVanie/deliveroo-clone",
+                  ])
+                }
+              >
+                <Image
+                  src={deliverooclone}
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                />
+              </div>
+              <div
+                className="basis-1/4 cursor-pointer"
+                onClick={() =>
+                  openModal([
+                    "DOJO BLOG",
+                    "REACT JS, CSS",
+                    "This is a blog application made with React JS and CSS. It is a blog application that allows you to create, read, update and delete posts. It is a CRUD application. Check out the demo video on my github repository.",
+                    "https://github.com/SamuelVanie/dojo-blog",
+                  ])
+                }
+              >
+                <Image
+                  src={dojoblog}
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                />
+              </div>
+              <div
+                className="basis-1/4 cursor-pointer"
+                onClick={() =>
+                  openModal([
+                    "Ray Tracing",
+                    "PYTHON",
+                    "This is a ray tracing application made with Python. It uses ray tracing techlogy to render some 3D objects. Check out an example of the result on my github repository.",
+                    "https://github.com/SamuelVanie/ray_tracing",
+                  ])
+                }
+              >
+                <Image
+                  src={figraytracing}
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                />
+              </div>
+              <div
+                className="basis-1/4 cursor-pointer"
+                onClick={() =>
+                  openModal([
+                    "KONESTO RESTAURANT WEBSITE",
+                    "HTML, CSS, PHP, JAVASCRIPT",
+                    "This is a restaurant website made with HTML, CSS, PHP and Javascript. It is a website of a restaurant that allows people to buy food from their card. The cards are read by a raspberry pi. The site is hosted but will not work because the raspberry pi is not connected to the internet. Check it out on the link below",
+                    "https://samuelvanie.github.io/RestaurantWebSite/",
+                  ])
+                }
+              >
+                <Image
+                  src={konesto}
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                />
+              </div>
+
+              <div
+                className="basis-1/4 cursor-pointer"
+                onClick={() =>
+                  openModal([
+                    "LAPTOP UI",
+                    "HTML, CSS",
+                    "Simple hero section of a laptop website. This is a simple hero section of a laptop website. It is made with HTML and CSS. Check it out on the link below.",
+                    "https://samuelvanie.github.io/laptop-ui/",
+                  ])
+                }
+              >
+                <Image
+                  src={laptopui}
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                />
+              </div>
+
+              <div
+                className="basis-1/4 cursor-pointer"
+                onClick={() =>
+                  openModal([
+                    "PLATEFORMESI",
+                    "LARAVEL, AJAX, BOOTSTRAP",
+                    "Website for a university. Help the university to manage the students and the teachers. Can be used to manage grades, attendance, etc... The server were it was hosted is downnow, but you can check the code and also the full project concept on the link below",
+                    "rapport.pdf",
+                  ])
+                }
+              >
+                <Image
+                  src={plateformesi}
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                />
+              </div>
+
+              <div
+                className="basis-1/4 cursor-pointer"
+                onClick={() =>
+                  openModal([
+                    "PORTFOLIO",
+                    "NEXT JS, TAILWIND CSS",
+                    "This represents my portfolio. The current website you are on. It is made with Next JS and Tailwind CSS. Check out the source code on the link below",
+                    "https://github.com/SamuelVanie/portfolio-next-js",
+                  ])
+                }
+              >
+                <Image
+                  src={portfolio}
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                />
+              </div>
+
+              <div
+                className="basis-1/4 cursor-pointer"
+                onClick={() =>
+                  openModal([
+                    "PYTHON GAME",
+                    "PYTHON (PYGAME)",
+                    "This is a game made with Python and Pygame. It is a simple game I decided to build to learn more about Pygame. Check out the source code on the link below",
+                    "https://github.com/SamuelVanie/pyGameProject",
+                  ])
+                }
+              >
+                <Image
+                  src={pygamegame}
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                />
+              </div>
+
+              <div
+                className="basis-1/4 cursor-pointer"
+                onClick={() =>
+                  openModal([
+                    "QUOTE GENERATOR",
+                    "NEXTJS, STYLED COMPONENTS, AWS LAMBDA, TYPESCRIPT",
+                    "This is a quote generator made with Next JS, Styled Components, AWS Lambda and Typescript. It is a simple quote generator that allows you to generate daily quotes. The quotes are fetch from the zenquotes API. It is still an ongoing project so not yet hosted. Check out the source code on the link below",
+                    "https://github.com/SamuelVanie/quote-generator",
+                  ])
+                }
+              >
+                <Image
+                  src={quotegenerator}
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                />
+              </div>
+
+              <div
+                className="basis-1/4 cursor-pointer"
+                onClick={() =>
+                  openModal([
+                    "SNAKE GAME",
+                    "JAVASCRIPT",
+                    "This is a simple snake game made with Javascript. It uses the canvas API to render the game and the Grid system for the snake movements. You can play it directly in the browser on the link below",
+                    "https://samuelvanie.github.io/snake_js/",
+                  ])
+                }
+              >
+                <Image
+                  src={snakejs}
                   className="rounded-lg object-cover"
                   width={"100%"}
                   height={"100%"}
@@ -272,6 +455,7 @@ export default function Home() {
                   title={currentProject[0]}
                   technologies={currentProject[1]}
                   description={currentProject[2]}
+                  link={currentProject[3]}
                   closeModal={closeModal}
                 />
               )}
