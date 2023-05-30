@@ -129,7 +129,7 @@ export default function Home() {
 
               <p className="text-gray-800 dark:text-white">
                 This project uses{" "}
-                <span className="text-teal-500">REACT JS and NEXT JS</span>
+                <span className="text-teal-500">NEXT JS and TAILWINDCSS</span>
               </p>
             </div>
 
