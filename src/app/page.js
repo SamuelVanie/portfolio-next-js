@@ -28,6 +28,9 @@ import pygamegame from "../../public/pyGameGame.png";
 import quotegenerator from "../../public/quote_generator.png";
 import snakejs from "../../public/snake_js.png";
 
+import projetgl from "../../public/GL.png";
+import blobwar from "../../public/blobwar.jpg";
+
 import { Fragment, useState } from "react";
 import Modal from "../components/Modal";
 
@@ -402,6 +405,46 @@ export default function Home() {
               >
                 <Image
                   src={pygamegame}
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                />
+              </div>
+
+              <div
+                className="basis-1/4 cursor-pointer"
+                onClick={() =>
+                  openModal([
+                    "PROJET GL",
+                    "JAVA, JUNIT, MOCKITO",
+                    "This is a project made with Java. It is compiler made from scratch for a programming language called Deca. That compiler aims to compile Deca code to assembly code for a custom processor made at ENSIMAG. The Deca language is similar to KOTLIN, inspired by JAVA. This compiler that I made with my team was able to compile Deca code to Commodore 64 assembly code.",
+                    "",
+                  ])
+                }
+              >
+                <Image
+                  src={projetgl}
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                />
+              </div>
+
+              <div
+                className="basis-1/4 cursor-pointer"
+                onClick={() =>
+                  openModal([
+                    "BLOBWAR AI",
+                    "RUST (RAYON)",
+                    "This projet was made with Rust. The purpose of this one was to create an artificial intelligence for the game called blobwar. It was a solo school project. Optimisation technics using the rayon crate was one of the main purpose of this project. I made the AI using the minimax algorithm. Click to check out the algorithm explanation.",
+                    "https://en.wikipedia.org/wiki/Minimax",
+                  ])
+                }
+              >
+                <Image
+                  src={blobwar}
                   className="rounded-lg object-cover"
                   width={"100%"}
                   height={"100%"}
