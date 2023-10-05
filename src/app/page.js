@@ -10,7 +10,7 @@ import {
 
 import Image from "next/image";
 import Link from "next/link";
-import waveCharacter from "../../public/sam_smiling_to_world.png";
+import samImg from "../../public/avatar.png";
 import design from "../../public/design.png";
 import code from "../../public/code.png";
 import system from "../../public/consulting.png";
@@ -106,7 +106,7 @@ export default function Home() {
               </Link>
             </div>
             <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
-              <Image src={waveCharacter} layout="fill" objectFit="cover" />
+              <Image src={samImg} layout="fill" objectFit="cover" />
             </div>
           </section>
 
