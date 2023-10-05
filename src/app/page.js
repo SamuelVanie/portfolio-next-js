@@ -29,7 +29,7 @@ import quotegenerator from "../../public/quote_generator.png";
 import snakejs from "../../public/snake_js.png";
 
 import projetgl from "../../public/GL.png";
-import blobwar from "../../public/blobwar.jpg";
+import blobwar from "../../public/blobwar.jpeg";
 
 import { Fragment, useState } from "react";
 import Modal from "../components/Modal";
