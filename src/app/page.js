@@ -34,6 +34,10 @@ import blobwar from "../../public/blobwar.jpeg";
 import { Fragment, useState } from "react";
 import Modal from "../components/Modal";
 
+import { I18nextProvider } from "react-i18next";
+import i18n from "./i18n";
+import { useTranslation } from "react-i18next";
+
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
 
@@ -49,8 +53,11 @@ export default function Home() {
     setModalOpen(false);
   };
 
+  const { t } = useTranslation();
+
   return (
-    <Fragment>
+    <I18nextProvider i18n={i18n}>
+      <Fragment>
       <div className={darkMode ? "dark" : ""}>
         <Head>
           <title>Samuel Michael Vanie Portfolio</title>
@@ -85,13 +92,10 @@ export default function Home() {
                 Samuel Michael Vanie
               </h2>
               <h3 className="text-2xl py-2 md:text-3xl text-gray-800 dark:text-white">
-                Computer Sciences, Electronics and Telecommunications student
+                {t('occupation')}
               </h3>
               <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-4xl mx-auto dark:text-white">
-                I also provide services as a freelancer, I am a web developer
-                (specialized in backend development), mobile developper (hybrid
-                and native with Kotlin), and I also do system programming and
-                administration (specialized in linux).
+                {t('more_about')}
               </p>
             </div>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-white">
@@ -116,18 +120,10 @@ export default function Home() {
           <section className="mb-10">
             <div className="text-center">
               <p className="text-md py-2 mt-10 leading-8 text-gray-800 md:text-xl max-w-4xl mx-auto dark:text-white">
-                Since an early age, I have been interested in computer sciences.
-                With my curiosity, I have learned to work on several kinds of
-                <span className="text-teal-500"> technologies</span>. I acquired
-                a certain <span className="text-teal-500">experience</span> in
-                the field of computer science. I worked on WEB, mobile, games,
-                video editing, desktop, system programming and plugins
-                development on my favorite text editor{" "}
-                <span className="text-teal-500">Emacs</span>.
+                {t('service')}
               </p>
               <p className="text-md py-2 leading-8 text-gray-800 md:text-xl max-w-4xl mx-auto dark:text-white">
-                I offer from a wide range of services, from web development to
-                system administration, through mobile development.
+                {t('download')}
               </p>
 
               <p className="text-gray-800 dark:text-white">
@@ -507,5 +503,6 @@ export default function Home() {
         </main>
       </div>
     </Fragment>
+    </I18nextProvider>
   );
 }
