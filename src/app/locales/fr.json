@@ -1,8 +1,9 @@
 {
     "occupation": "Etudiant en ingénierie informatique",
-    "more_about": "J'aime la programmation sous tous ses aspects. Je suis à fond actuellement sur le développement en Rust. Cependant je fais de la programmation web backend et frontend en Javascript, Python, Java et C# en plus de Rust (voir mon CV pour les frameworks). Je fais également du développement mobile hybride avec Flutter et React Native et natif avec Java (et oui je ne me suis pas encore mis à jour sur Kotlin). Ce que j'adore par dessus tout c'est la programmation système (j'aime les challenges). Linux est mon système de prédilection, mais je sais utiliser Windows et MacOS.",
-    "service": "Je peux travailler sur toutes sortes de projets et m'adapter à la plupart des environments tant que je rencontre des personnes sympathiques et des projets qui représentent un challenge. Attention, je ne fais pas que cela, je suis un sportif, j'adore le volleyball, je joue beaucoup aux jeux, je sais chanter.",
+    "more_about": "Bonjour, je m'appelle Samuel Michael Vanié. Actuellement en deuxième année d'ingénierie des systèmes d'information à l'Ecole Nationale Supérieure d'Informatique et de Mathématiques Appliquées de Grenoble (ENSIMAG), je suis passionné par la résolution de problèmes complexes et la création de solutions innovantes. J'aime la programmation sous tous ses aspects. J'ai pu parcourir lors de mon parcours plusieurs domaines tels que la programmation web backend et frontend en Javascript, Python, Java et C# en plus de Rust (voir mon CV pour la liste complète des frameworks). Je fais également du développement mobile hybride avec Flutter et React Native et natif avec Java (et oui je ne me suis pas encore mis à jour sur Kotlin). Ce que j'adore par dessus tout c'est la programmation système (j'aime les challenges). Linux est mon système de prédilection, mais je sais également utiliser Windows et MacOS.",
+    "service": "Je peux travailler sur toutes sortes de projets et m'adapter à la plupart des environments tant que je rencontre des personnes sympathiques et des projets qui représentent un challenge. Attention, je ne fais pas que cela, je suis un sportif, j'adore le volleyball, je joue beaucoup aux jeux, je sais chanter. Passez un bon moment sur mon site et n'hésitez pas à me contacter si vous avez des questions.",
     "download": "N'hésitez pas à télécharger mon CV",
+    "download_cv": "Télécharger CV",
     "design_title": "De Beaux Designs",
     "design_description": "Créer de beaux et élégants designs adaptés à vos besoins",
     "design_tools_text": "Les outils que j'utilise pour le design sont",
@@ -11,7 +12,7 @@
     "sysnet_title": "Administration et Programmation Système",
     "sysnet_description": "J'ai des connaissances en administration système grâçe à mes 7 ans d'expérience sous linux (j'ai essayé au moins chaque famille de distro, et je suis principalement sur Arch). J'ai également des bases en réseau IP, la création de réseaux locaux et la gestion de périphériques tels que les switchs et les routeurs.",
     "inspiring_proj_title": "Projets Inspirants",
-    "inspiring_proj_description": "Ceci est une liste non exhaustive de mes projets, certains d'entre-eux sont privés parce qu'ils appartiennent à des entreprises.",
+    "inspiring_proj_description": "Ceci est une liste non exhaustive de mes projets, certains d'entre-eux sont privés parce qu'ils appartiennent à des entreprises ou à des écoles.",
     "call_to_click_inspiring": "Cliquez sur l'image du projet pour en apprendre plus et fermez en cliquant sur la croix juste au dessus du popup qui apparaît",
     "check_the_link": "Consulter le lien",
     "chang_title": "Algorithme de Chang et Robert",
@@ -43,6 +44,6 @@
     "snake_js_title": "Snake Game Grid",
     "snake_js_description": "Création d'un célèbre jeu Snake à l'aide de Canvas API en javascript. Le défi de ce projet etait l'utilisation des grilles (CSS GRID) uniquement pour la mise en place du jeu.",
     "youdotcom_title": "Youdotcom pour Emacs",
-    "youdotcom_description": "Youdotcom est un mode (package) que j'ai crée pour Emacs. Il permet de faire des recherches sur le web à partir de l'éditeur. Il est écrit en Emacs Lisp et utilise l'intelligence articielle pour effectuer une recherche plus fiable sur le moteur de recherche de You. Je l'ai récemment soumis à MELPA et j'ai hâte de le voir sur le dépôt officiel. Je ferai officiellement partie ainsi de la communauté des développeurs Emacs. Vous pouvez consulter le dépôt sur le lien ci-dessous."
+    "youdotcom_description": "Youdotcom est un mode (package) que j'ai crée pour Emacs. Il permet de faire des recherches sur le web à partir de l'éditeur grâce au moteur de recherche You.com. Il est écrit en Emacs Lisp et utilise l'intelligence articielle pour effectuer une recherche plus fiable. Je l'ai récemment soumis à MELPA et il a été accepté par développeurs qui assurent le maintient. J'ai hâte de le voir sur le dépôt officiel. Je fais officiellement partie, ainsi de la communauté des développeurs Emacs. Vous pouvez consulter le dépôt sur le lien ci-dessous."
 
 }

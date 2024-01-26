@@ -44,6 +44,9 @@ export default function Home() {
   const [modalOpen, setModalOpen] = useState(false);
   const [currentProject, setCurrentProject] = useState(null);
 
+  const languages = ["fr", "en"];
+  const [language, setLanguage] = useState("fr");
+
   const openModal = (project) => {
     setModalOpen(true);
     setCurrentProject(project);
@@ -51,6 +54,13 @@ export default function Home() {
 
   const closeModal = () => {
     setModalOpen(false);
+  };
+
+  const setLanguageHandler = () => {
+    const lang =
+      languages[(languages.indexOf(language) + 1) % languages.length];
+    setLanguage(lang);
+    i18n.changeLanguage(lang);
   };
 
   const { t } = useTranslation();
@@ -78,11 +88,19 @@ export default function Home() {
                       className="cursor-pointer text-2xl text-gray-800 dark:text-white"
                     />
                   </li>
+                  <li>
+                    <button
+                      onClick={setLanguageHandler}
+                      className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+                    >
+                      {language}
+                    </button>
+                  </li>
                   <Link
                     href="cv.pdf"
                     className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
                   >
-                    Resume
+                    {t("download_cv")}
                   </Link>
                 </ul>
               </nav>
@@ -127,8 +145,7 @@ export default function Home() {
                 </p>
 
                 <p className="text-gray-800 dark:text-white">
-                  This project uses{" "}
-                  <span className="text-teal-500">NEXT JS and TAILWINDCSS</span>
+                  <span className="text-teal-500">Enjoy your time here</span>
                 </p>
               </div>
 
