@@ -1,6 +1,7 @@
 "use client";
 
 import Head from "next/head";
+import { MdDownload } from "react-icons/md";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import {
   AiFillGithub,
@@ -77,8 +78,8 @@ export default function Home() {
 
           <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-black">
             <section className="min-h-screen">
-              <nav className="py-10 mb-12 flex justify-between">
-                <h1 className="text-xl font-burtons text-gray-800 dark:text-white">
+              <nav className="mb-12 flex items-center justify-between py-10">
+                <h1 className="font-burtons h-full text-base text-gray-800 md:text-lg dark:text-white">
                   SamuelVanie
                 </h1>
                 <ul className="flex items-center">
@@ -91,32 +92,33 @@ export default function Home() {
                   <li>
                     <button
                       onClick={setLanguageHandler}
-                      className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+                      className="ml-8 rounded-md bg-gradient-to-r from-cyan-500 to-teal-500 px-4 py-2 text-white"
                     >
                       {language}
                     </button>
                   </li>
                   <Link
                     href="cv.pdf"
-                    className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+                    className="ml-8 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-teal-500 px-4 py-2 text-white"
                   >
+                    <MdDownload className="mr-1 text-white" />
                     {t("download_cv")}
                   </Link>
                 </ul>
               </nav>
 
-              <div className="text-center p-10">
-                <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
+              <div className="p-10 text-center">
+                <h2 className="py-2 text-5xl font-medium text-teal-600 md:text-6xl">
                   Samuel Michael Vanie
                 </h2>
-                <h3 className="text-2xl py-2 md:text-3xl text-gray-800 dark:text-white">
+                <h3 className="py-2 text-2xl text-gray-800 md:text-3xl dark:text-white">
                   {t("occupation")}
                 </h3>
-                <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-4xl mx-auto dark:text-white">
+                <p className="text-md mx-auto max-w-4xl py-5 leading-8 text-gray-800 md:text-xl dark:text-white">
                   {t("more_about")}
                 </p>
               </div>
-              <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-white">
+              <div className="flex justify-center gap-16 py-3 text-5xl text-gray-600 dark:text-white">
                 <Link href="https://twitter.com/samuel_vanie" target="_blank">
                   <AiFillTwitterCircle />
                 </Link>
@@ -130,17 +132,17 @@ export default function Home() {
                   <AiFillLinkedin />
                 </Link>
               </div>
-              <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
+              <div className="relative mx-auto mt-20 h-80 w-80 overflow-hidden rounded-full bg-gradient-to-b from-teal-500 md:h-96 md:w-96">
                 <Image src={samImg} layout="fill" objectFit="cover" />
               </div>
             </section>
 
             <section className="mb-10">
               <div className="text-center">
-                <p className="text-md py-2 mt-10 leading-8 text-gray-800 md:text-xl max-w-4xl mx-auto dark:text-white">
+                <p className="text-md mx-auto mt-10 max-w-4xl py-2 leading-8 text-gray-800 md:text-xl dark:text-white">
                   {t("service")}
                 </p>
-                <p className="text-md py-2 leading-8 text-gray-800 md:text-xl max-w-4xl mx-auto dark:text-white">
+                <p className="text-md mx-auto max-w-4xl py-2 leading-8 text-gray-800 md:text-xl dark:text-white">
                   {t("download")}
                 </p>
 
@@ -149,15 +151,15 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="lg:flex gap-10">
-                <div className="lg:basis-1/3 flex flex-col items-center shadow-lg p-10 rounded-xl my-10 text-center dark:bg-gray-900">
+              <div className="gap-10 lg:flex">
+                <div className="my-10 flex flex-col items-center rounded-xl p-10 text-center shadow-lg lg:basis-1/3 dark:bg-gray-900">
                   <Image
                     src={design}
                     width={100}
                     height={100}
                     alt="design icon"
                   />
-                  <h3 className="text-lg font-medium pt-8 pb-2 text-gray-800 dark:text-white">
+                  <h3 className="pb-2 pt-8 text-lg font-medium text-gray-800 dark:text-white">
                     {t("design_title")}
                   </h3>
                   <p className="py-2 text-gray-800 dark:text-white">
@@ -166,21 +168,21 @@ export default function Home() {
                   <h4 className="py-4 text-teal-600 dark:text-white">
                     {t("design_tools_text")}
                   </h4>
-                  <p className="text-gray-800 py-1 dark:text-white">
+                  <p className="py-1 text-gray-800 dark:text-white">
                     Photoshop
                   </p>
-                  <p className="text-gray-800 py-1 dark:text-white">Figma</p>
-                  <p className="text-gray-800 py-1 dark:text-white">Adobe XD</p>
+                  <p className="py-1 text-gray-800 dark:text-white">Figma</p>
+                  <p className="py-1 text-gray-800 dark:text-white">Adobe XD</p>
                 </div>
 
-                <div className="lg:basis-1/3 flex flex-col items-center shadow-lg p-10 rounded-xl my-10 text-center dark:bg-gray-900">
+                <div className="my-10 flex flex-col items-center rounded-xl p-10 text-center shadow-lg lg:basis-1/3 dark:bg-gray-900">
                   <Image
                     src={code}
                     width={100}
                     height={100}
                     alt="code hashtap icon"
                   />
-                  <h3 className="text-lg font-medium pt-8 pb-2 text-gray-800 dark:text-white">
+                  <h3 className="pb-2 pt-8 text-lg font-medium text-gray-800 dark:text-white">
                     {t("optimization_title")}
                   </h3>
                   <p className="py-2 text-gray-800 dark:text-white">
@@ -191,14 +193,14 @@ export default function Home() {
                   </h4>
                 </div>
 
-                <div className="lg:basis-1/3 flex flex-col items-center shadow-lg p-10 rounded-xl my-10 text-center dark:bg-gray-900">
+                <div className="my-10 flex flex-col items-center rounded-xl p-10 text-center shadow-lg lg:basis-1/3 dark:bg-gray-900">
                   <Image
                     src={system}
                     width={100}
                     height={100}
                     alt="hand icon representing system programming"
                   />
-                  <h3 className="text-lg font-medium pt-8 pb-2 text-gray-800 dark:text-white">
+                  <h3 className="pb-2 pt-8 text-lg font-medium text-gray-800 dark:text-white">
                     {t("sysnet_title")}
                   </h3>
                   <p className="py-2 text-gray-800 dark:text-white">
@@ -209,7 +211,7 @@ export default function Home() {
             </section>
             <section>
               <div className="text-center">
-                <h3 className="text-3xl py-1 text-gray-800 dark:text-white">
+                <h3 className="py-1 text-3xl text-gray-800 dark:text-white">
                   {t("inspiring_proj_title")}
                 </h3>
                 <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
@@ -221,7 +223,7 @@ export default function Home() {
               </div>
 
               {/* PROJECTS LIST */}
-              <div className="flex flex-col gap-10 py-10 justify-center w-full lg:flex-row lg:flex-wrap">
+              <div className="flex w-full flex-col justify-center gap-10 py-10 lg:flex-row lg:flex-wrap">
                 <div
                   className="basis-1/4 cursor-pointer"
                   onClick={() =>
